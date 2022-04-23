@@ -1,1 +1,9 @@
-/// <reference types="react-scripts" />
+declare module '*.jpg';
+declare module '*.gif';
+declare module '*.jpeg';
+declare module '*.webp';
+declare module '*.png';
+declare module '*.svg';
+declare module '*.ico';
+declare module '*.jfif';
+declare module '*.pdf';
