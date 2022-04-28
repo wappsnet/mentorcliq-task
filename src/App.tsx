@@ -7,6 +7,7 @@ import Register from "pages/register";
 import AuthProvider from "components/AuthProvider";
 import Login from "pages/login";
 import Profile from "pages/profile";
+import Home from "pages/home";
 
 function App() {
   return (
@@ -14,13 +15,16 @@ function App() {
       <AuthProvider>
         <Router history={history}>
           <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
             <Route path="/register">
               <Register />
             </Route>
             <Route path="/login" exact>
               <Login/>
             </Route>
-            <Route path="/profile">
+            <Route path="/profile" exact>
               <Profile/>
             </Route>
           </Switch>
